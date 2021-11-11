@@ -11,31 +11,31 @@
                         <ul class="d_flex">
                             <li>
                                 <i>
-                                    <img src="../assets/img/buy-comics-digital-comics.png" alt="" >
+                                    <img src="../assets/img/buy-comics-digital-comics.png" alt="" width="80%" >
                                 </i>
                                 <a href="">Digital comics</a>
                             </li>
                             <li>
                                 <i>
-                                    <img src="../assets/img/buy-comics-merchandise.png" alt="" >
+                                    <img src="../assets/img/buy-comics-merchandise.png" alt="" width="80%" >
                                 </i>
                                 <a href="">DC Merchandise</a>
                             </li>
                             <li>
                                 <i>
-                                    <img src="../assets/img/buy-comics-subscriptions.png" alt="" >
+                                    <img src="../assets/img/buy-comics-subscriptions.png" alt="" width="90%" >
                                 </i>
                                 <a href="">Subscription</a>
                             </li>
                             <li>
                                 <i>
-                                    <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+                                    <img src="../assets/img/buy-comics-shop-locator.png" alt="" width="65%">
                                 </i>
                                 <a href="">Comic Shop Locator</a>
                             </li>
                             <li>
                                 <i>
-                                    <img src="../assets/img/buy-dc-power-visa.svg" alt="" >
+                                    <img src="../assets/img/buy-dc-power-visa.svg" alt="" width="100%" >
                                 </i>
                                 <a href="">DC Power Visa</a>
                             </li>
@@ -72,15 +72,16 @@
             display: flex;
             align-items: center;
             i{
-                width: 50px;
+                width: 60px;
+                text-align: center;
             }
             a{
                 padding: 1rem;
             }
         }
-        img{
+        /* img{
             width: 100%;
-        }
+        } */
     }
 
 </style>
