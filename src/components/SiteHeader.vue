@@ -40,8 +40,6 @@
     }
 
     li{
-        display: inline-block;
-        margin: .5rem;
         height: 100%;
         color: $fc_gray90;
         text-transform: uppercase;

@@ -52,7 +52,33 @@
                 </div>
             </div>
         </div>
-        <div class="cta_section"></div>
+
+        <div class="cta_section">
+            <div class="container">
+                <a href="" class="btn btn_outline">Sign-up now!</a>
+
+                <nav class="follow_socials">
+                    <ul>
+                        <li><a href="">Follow Us</a></li>
+                        <li>
+                            <a href=""><img src="../assets/img/footer-facebook.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../assets/img/footer-twitter.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../assets/img/footer-youtube.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../assets/img/footer-pinterest.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../assets/img/footer-periscope.png" alt=""></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </footer>
 </template>
 
@@ -63,27 +89,54 @@
     @import '../assets/scss/common.scss';
 
     #site_footer{
-        background-image: url('../assets/img/footer-bg.jpg');
-        background-repeat: no-repeat;
-        background-size: cover ;
-        .container{
-            background: url('../assets/img/dc-logo-bg.png') right center no-repeat;
-            background-size: 58%;
-        }
-        .row{
-            margin: 0 -1.2rem;
-            padding: 2rem 0 4rem;
-        }
-        .col{
-            padding: 0 1.2rem;
+        .footer_links{
+            background-image: url('../assets/img/footer-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            .container{
+                background: url('../assets/img/dc-logo-bg.png') right center no-repeat;
+                background-size: 58%;
+            }
+            .row{
+                margin: 0 -1.2rem;
+                padding: 2rem 0 4rem;
+            }
+            .col{
+                padding: 0 1.2rem;
+            }
+
+            h2{
+                color: $fc_light;
+                margin: 1rem 0;
+                text-transform: uppercase;
+            }
+            li{
+                font-size: $fs_footer_link;
+                margin: .5rem 0;
+            }
         }
 
-        h2{
-            color: $fc_light;
-            margin: 1rem 0;
-        }
-        li{
-            margin: .5rem 0;
+        .cta_section{
+            &, .container, ul{
+                display: flex;
+                align-items: center;
+            }
+            height: $ends_height;
+            background: $bg_gray;
+            .container{
+                justify-content: space-between;
+            }
+            .btn{
+                color: $fc_light;
+            }
+            ul li:first-child{
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: 800;
+                a{
+                    color: $dc_primary;
+                }
+            }
         }
     }
 </style>
