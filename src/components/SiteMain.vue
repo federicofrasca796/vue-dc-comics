@@ -52,8 +52,6 @@
     @import '../assets/scss/variables.scss';
     @import '../assets/scss/common.scss'; 
     
-    #site_main{
-    }
     .content_here{
         background: $bg_dark;
         color: $fc_light;
