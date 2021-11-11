@@ -30,19 +30,28 @@
   @import '../assets/scss/common.scss';  
 
   #site_header{
-  height: $ends_height;
-  background: #ffff;
-  display: flex;
-  align-items: center;
-  .container{
-      justify-content: space-between;
-      align-items: center;
-  }
+    height: $ends_height;
+    background: #ffff;
+    display: flex;
+    align-items: center;
+    .container{
+        justify-content: space-between;
+        align-items: center;
+    }
 
-  li{
-      display: inline-block;
-      margin: .5rem;
-  }
+    li{
+        display: inline-block;
+        margin: .5rem;
+        height: 100%;
+        color: $fc_gray90;
+        text-transform: uppercase;
+        font-size: $fs_header;
+        font-weight: 800;
+
+        &.active{
+          border-bottom: 3px solid $dc_primary;
+        }
+    }
 
   }
 </style>

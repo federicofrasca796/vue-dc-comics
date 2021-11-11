@@ -6,11 +6,15 @@
 
 body{
     font-family: 'Arial Narrow', sans-serif;
+    // font-family: "Greta Sans Condensed Bold","Greta Sans Bold",Arial,sans-serif;
 }
 ul{
     list-style: none;
 }
-
+a{
+    text-decoration: none;
+    color: $fc_gray_light;
+}
 
 .container{
     width: 1200px;
