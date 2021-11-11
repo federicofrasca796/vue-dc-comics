@@ -7,27 +7,40 @@
             </section>
 
             <div class="buy_info">
-                <div class="container d_flex">
-                    <nav>
-                        <ul>
+                <nav class="container">
+                        <ul class="d_flex">
                             <li>
+                                <i>
+                                    <img src="../assets/img/buy-comics-digital-comics.png" alt="" >
+                                </i>
                                 <a href="">Digital comics</a>
                             </li>
                             <li>
+                                <i>
+                                    <img src="../assets/img/buy-comics-merchandise.png" alt="" >
+                                </i>
                                 <a href="">DC Merchandise</a>
                             </li>
                             <li>
+                                <i>
+                                    <img src="../assets/img/buy-comics-subscriptions.png" alt="" >
+                                </i>
                                 <a href="">Subscription</a>
                             </li>
                             <li>
+                                <i>
+                                    <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+                                </i>
                                 <a href="">Comic Shop Locator</a>
                             </li>
                             <li>
+                                <i>
+                                    <img src="../assets/img/buy-dc-power-visa.svg" alt="" >
+                                </i>
                                 <a href="">DC Power Visa</a>
                             </li>
                         </ul>
-                    </nav>
-                </div>
+                </nav>
             </div>
     </main>
 </template>
@@ -47,8 +60,29 @@
         padding: 3rem;
     }
     .buy_info{
-        justify-content: space-around;
         background: $dc_primary;
+        ul{
+            justify-content: space-around;
+            align-items: center;
+            padding: 2rem 0;
+        }
+        li, a{
+            color: white;
+            text-transform: uppercase;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            i{
+                width: 50px;
+            }
+            a{
+                padding: 1rem;
+            }
+        }
+        img{
+            width: 100%;
+        }
     }
 
 </style>
