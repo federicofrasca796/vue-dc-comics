@@ -63,13 +63,27 @@
     @import '../assets/scss/common.scss';
 
     #site_footer{
-        padding: 2rem 0;
-        background-image: url('../assets/img/footer-bg.jpg') ;
+        background-image: url('../assets/img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover ;
+        .container{
+            background: url('../assets/img/dc-logo-bg.png') right center no-repeat;
+            background-size: 58%;
+        }
         .row{
             margin: 0 -1.2rem;
+            padding: 2rem 0 4rem;
         }
         .col{
             padding: 0 1.2rem;
+        }
+
+        h2{
+            color: $fc_light;
+            margin: 1rem 0;
+        }
+        li{
+            margin: .5rem 0;
         }
     }
 </style>
