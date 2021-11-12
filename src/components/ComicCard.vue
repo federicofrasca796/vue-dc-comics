@@ -1,9 +1,11 @@
 <template>
     <div class="card col">
-        <img :src="img" alt="">
-        <h3 class="card_info">
+        <div class="card_thumb">
+            <img :src="img" alt="">
+        </div>
+        <div class="card_info">
             {{comicsName}}
-        </h3>
+        </div>
     </div>
 
 </template>
@@ -22,10 +24,14 @@ export default {
     .card{
         &.col{
             width: calc(100% / 6);
+            margin-bottom: 3rem;
+        }
+        .card_thumb{
+            text-align: center;
         }
         img{
-            height: 150px;
-            width: 150px;
+            height: 160px;
+            width: 160px;
             object-fit: cover;
             object-position: top;
             margin-bottom: 1rem;

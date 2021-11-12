@@ -20,6 +20,10 @@ nav li{
     display: inline-block;
     margin: 1rem;
 }
+
+h1{
+    font-size: 1.5rem;
+}
 .container{
     width: 1200px;
     margin: auto;
@@ -36,6 +40,9 @@ nav li{
 .d_flex{
     display: flex;
 }
+.align_center{
+    text-align: center;
+}
 
 .btn {
     padding: 1rem;
@@ -43,4 +50,8 @@ nav li{
 }
 .btn.btn_outline{
     border: 2px solid $dc_primary;
+}
+.btn.btn_primary{
+    background: $dc_primary;
+    color: #fff;
 }

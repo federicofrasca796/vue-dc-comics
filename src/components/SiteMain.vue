@@ -5,19 +5,20 @@
 
         <section class="current_series">
             <div class="container">
+                <div class="title_tag">
+                    <h1>
+                        Current Series
+                    </h1> 
+                </div>
                 <div class="row d_flex">
-                    <!-- <div class="col">
-                        <div class="card">
-                            <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
-                            <div class="card_info">
-                                Action Comics
-                            </div>
-                        </div>
-                    </div> -->
                     <ComicCard v-for="comic in comics" :key="comic.id" :img="comic.thumb" :comicsName="comic.series"/>
-
                 </div>
                 
+                <div class="align_center">
+                    <button class="btn btn_primary">
+                        Load More
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -151,7 +152,6 @@ export default {
 
 <style scoped lang="scss">
     @import '../assets/scss/variables.scss';
-    // @import '../assets/scss/common.scss'; 
     
     #site_main{
         .jumbo{
@@ -161,36 +161,52 @@ export default {
             background-position: top center;
         }
         .current_series{
-        background: $bg_dark;
-        color: $fc_light;
-        padding: 3rem;
+            background: $bg_dark;
+            color: $fc_light;
+            padding: 3rem;
+            .container{
+                position: relative;
+            }
+            .title_tag{
+                position: absolute;
+                left: -1rem;
+                top: -5rem;
+                display: inline-block;
+                padding: .8rem 2rem;
+                background: $dc_primary;
+                text-transform: uppercase;
+            }
+            .row{
+                padding: 2rem 0;
+            }
+            .btn{
+                padding: .7rem 4rem;
+                font-weight: 700;
+                margin: auto;
+            }
         }
         .buy_info{
-        background: $dc_primary;
-        ul{
-            justify-content: space-around;
-            align-items: center;
-            padding: 2rem 0;
-        }
-        li, a{
-            color: white;
-            text-transform: uppercase;
-        }
-        li{
-            display: flex;
-            align-items: center;
-            i{
-                width: 60px;
-                text-align: center;
+            background: $dc_primary;
+            ul{
+                justify-content: space-around;
+                align-items: center;
+                padding: 2rem 0;
             }
-            a{
-                padding: 1rem;
+            li, a{
+                color: white;
+                text-transform: uppercase;
             }
-        }
-        
-        /* img{
-            width: 100%;
-        } */
+            li{
+                display: flex;
+                align-items: center;
+                i{
+                    width: 60px;
+                    text-align: center;
+                }
+                a{
+                    padding: 1rem;
+                }
+            }
         }
     }
 
