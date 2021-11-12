@@ -20,7 +20,7 @@ export default {
 
 <style scoped lang="scss">
     .card{
-        .col{
+        &.col{
             width: calc(100% / 6);
         }
         img{
