@@ -24,6 +24,15 @@ nav li{
     width: 1200px;
     margin: auto;
 }
+.row{
+    margin: 0 -1.2rem;
+    padding: 2rem 0 4rem;
+    flex-wrap: wrap;
+}
+.col{
+    padding: 0 1.2rem;
+}
+
 .d_flex{
     display: flex;
 }

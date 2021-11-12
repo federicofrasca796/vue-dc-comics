@@ -97,13 +97,6 @@
                 background: url('../assets/img/dc-logo-bg.png') right center no-repeat;
                 background-size: 58%;
             }
-            .row{
-                margin: 0 -1.2rem;
-                padding: 2rem 0 4rem;
-            }
-            .col{
-                padding: 0 1.2rem;
-            }
 
             h2{
                 color: $fc_light;
@@ -117,12 +110,12 @@
         }
 
         .cta_section{
+            height: $ends_height;
+            background: $bg_gray;
             &, .container, ul{
                 display: flex;
                 align-items: center;
             }
-            height: $ends_height;
-            background: $bg_gray;
             .container{
                 justify-content: space-between;
             }

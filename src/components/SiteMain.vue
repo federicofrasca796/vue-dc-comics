@@ -1,12 +1,23 @@
 <template>
     <main id="site_main">
         <div class="jumbo">
-
         </div>
 
-        <section class="content_here">
+        <section class="current_series">
             <div class="container">
-                <h1>&#8212; Content goes here &#8212;</h1>
+                <div class="row d_flex">
+                    <!-- <div class="col">
+                        <div class="card">
+                            <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
+                            <div class="card_info">
+                                Action Comics
+                            </div>
+                        </div>
+                    </div> -->
+                    <ComicCard v-for="comic in comics" :key="comic.id" :img="comic.thumb" :comicsName="comic.series"/>
+
+                </div>
+                
             </div>
         </section>
 
@@ -50,11 +61,15 @@
 </template>
 
 <script>
+import ComicCard from './ComicCard.vue'
+
 export default {
-    // props: ,
+    components: {
+        ComicCard,
+    },
     data(){
         return {
-            games: [
+            comics: [
                 {
                     "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
                     "price": "$19.99",
@@ -136,7 +151,7 @@ export default {
 
 <style scoped lang="scss">
     @import '../assets/scss/variables.scss';
-    @import '../assets/scss/common.scss'; 
+    // @import '../assets/scss/common.scss'; 
     
     #site_main{
         .jumbo{
@@ -145,7 +160,7 @@ export default {
             background-size: cover;
             background-position: top center;
         }
-        .content_here{
+        .current_series{
         background: $bg_dark;
         color: $fc_light;
         padding: 3rem;
@@ -172,6 +187,7 @@ export default {
                 padding: 1rem;
             }
         }
+        
         /* img{
             width: 100%;
         } */
